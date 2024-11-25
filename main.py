@@ -105,7 +105,7 @@ def ejecutar_metodos(a, b, N, w0):
             for _, X, W in resultados:
                 print(f"x = {X:.{DECIMALES}f}, w = {W:.{DECIMALES}f}")
             resultados_finales.append((nombre, resultados[-1][2]))
-        
+
         print("\n=== Resultados Finales ===")
         for nombre, w_final in resultados_finales:
             print(f"{nombre}: w_final = {w_final:.{DECIMALES}f}")
@@ -127,10 +127,10 @@ def header():
 
 def main():
     try:
-        header()  
-        a = 1  
-        b = 5  
-        w0 = 0  
+        header()
+        a = 1
+        b = 5
+        w0 = 0
         N = int(input("Inserte un valor de N (número de pasos): "))
         if N <= 0:
             raise ValueError("N debe ser un número positivo.")
